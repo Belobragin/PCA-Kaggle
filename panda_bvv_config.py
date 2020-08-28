@@ -29,13 +29,6 @@ from random import shuffle
 # In[4]:
 
 
-#AWS variables:
-regionbvv = 'us-east-2'
-os.environ['AWS_DEFAULT_REGION'] = regionbvv
-os.environ['HOME'] = "/home/admin"
-keypair_name = '/home/admin/AWS/bvvohio.pem'
-locationbvv = {'LocationConstraint': regionbvv}
-
 
 # In[5]:
 
