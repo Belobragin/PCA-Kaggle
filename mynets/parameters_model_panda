@@ -1,0 +1,27 @@
+image_sizey:320
+image_sizex:320
+num_epochs:2
+num_earlyStop:2
+num_reduceOnPlateu:8
+learn_rate:0.0005
+stop_patience:14
+inp_label_smooth:0.01
+BS:10
+s_per_epoch:20
+val_steps:8
+class_weights:{0: 0.6118, 1: 0.66367, 2: 1.31745, 3: 1.42458, 4: 1.4166, 5: 1.44553}
+output_bias:[2.448 2.367 1.681 1.603 1.608 1.588]
+model_name:model_panda.h5
+checkpoint_name:model_effnB0_panda_check
+weights_file:efficientnet-b0_weights_tf_dim_ordering_tf_kernels_autoaugment_notop.h5
+bestmodel_weights:None
+level0_file:None
+file_for_struct:model_effnB0_panda_struct.json
+file_for_weights:model_effnB0_panda_weights.h5
+history_file:history_effnB0.json
+save_plot_file:plot_edu_effnb0.png
+from_folder_train:testdata_grey/gs2_16x320
+from_folder_val:testdata_grey/gs2_16x320
+num_logits:6
+trdatagen:<function MultiClass.<locals>.wrapper at 0x7f5b15ecda60>
+valdatagen:<function MultiClass.<locals>.wrapper at 0x7f5b15ecda60>

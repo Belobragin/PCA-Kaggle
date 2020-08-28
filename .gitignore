@@ -1,0 +1,13 @@
+.ipynb*
+*.h5
+*.ods
+*.csv
+**/*.csv
+**/*.h5
+**/*.ods
+**/*.json
+__py*
+**/__py*
+__pycache__
+temp/
+

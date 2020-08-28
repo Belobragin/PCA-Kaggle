@@ -1,0 +1,13 @@
+# python3 t2_process.py --tof ts2_16x260_inv --ntile 16 --tsize 65
+# python3 effnB2kappa.py --cnnpar effnB2_test --mfolder effnB2kappa
+# python3 t2_split.py --cfv 2 --fromf ts2_16x260_inv
+# python3 t2_gleasondata.py
+# train: python3 effnB2kappa_deepaug.py --cnnpar effnB2_da_now --mfolder effnB2kappa_da_now
+# train: python3 effnB2kappa_da_wb.py --cnnpar effnB3_da --mfolder effnB3kappa_da_wb
+#train: python3 effnB3regr.py --cnnpar effnB3regr --mfolder effnB3regr
+#####################################################################################
+python3 t2_s2_tile_nob.py --fromf train_size2 --tof ts2_16x320_inv_nob --ntile 16 --tsize 80
+#####################################################################################
+
+python3 t2_s2_gs_tile_nob.py --ntile 16 --tsize 80
+python3 t2_split.py
